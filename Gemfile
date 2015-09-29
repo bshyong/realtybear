@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.2.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,6 +26,7 @@ gem 'spring',        group: :development
 gem 'puma'
 gem 'pg'
 gem 'rack-timeout'
+gem 'basscss-rails'
 
 group :production do
   gem 'rails_12factor'
@@ -44,4 +45,3 @@ ruby "2.2.0"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
