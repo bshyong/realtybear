@@ -1,7 +1,6 @@
 # workers consume RAM, threads consume CPU
 workers Integer(ENV['WEB_CONCURRENCY'] || 3)
 threads Integer(ENV['MIN_THREADS']  || 1), Integer(ENV['MAX_THREADS'] || 16)
-threads threads_count, threads_count
 
 preload_app!
 
