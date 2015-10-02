@@ -1,3 +1,13 @@
 body {
   font-family: 'San Francisco';
 }
+
+.shadow {
+  -moz-box-shadow:    2px 0px 3px 1px #DDDDDD;
+  -webkit-box-shadow: 2px 0px 3px 1px #DDDDDD;
+  box-shadow:         2px 0px 3px 1px #DDDDDD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
+}
