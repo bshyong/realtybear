@@ -1,0 +1,943 @@
+http://maps.assessor.lacounty.gov/
+
+query (no street direction, type, or city name allowed)
+http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/SQLAddressSearch?f=json&SANUM=815%20harvard&dojo.preventCache=1443751028037
+
+response:
+{
+  "results":{
+    "AddressResults":[
+      {
+        "AIN":"5093017033",
+        "FormattedAIN":"5093-017-033",
+        "Address1":"815 S HARVARD BLVD, 201",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341202"
+      },
+      {
+        "AIN":"5093017034",
+        "FormattedAIN":"5093-017-034",
+        "Address1":"815 S HARVARD BLVD, 202",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341294"
+      },
+      {
+        "AIN":"5093017035",
+        "FormattedAIN":"5093-017-035",
+        "Address1":"815 S HARVARD BLVD, 301",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341247"
+      },
+      {
+        "AIN":"5093017036",
+        "FormattedAIN":"5093-017-036",
+        "Address1":"815 S HARVARD BLVD, 302",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341400"
+      },
+      {
+        "AIN":"5093017037",
+        "FormattedAIN":"5093-017-037",
+        "Address1":"815 S HARVARD BLVD, 401",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341269"
+      },
+      {
+        "AIN":"5093017038",
+        "FormattedAIN":"5093-017-038",
+        "Address1":"815 S HARVARD BLVD, 402",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341184"
+      },
+      {
+        "AIN":"5093017039",
+        "FormattedAIN":"5093-017-039",
+        "Address1":"815 S HARVARD BLVD, 501",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341444"
+      },
+      {
+        "AIN":"5093017040",
+        "FormattedAIN":"5093-017-040",
+        "Address1":"815 S HARVARD BLVD, 502",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341382"
+      },
+      {
+        "AIN":"5093017041",
+        "FormattedAIN":"5093-017-041",
+        "Address1":"815 S HARVARD BLVD, 503",
+        "Address2":"LOS ANGELES CA 90005",
+        "ObjectId":"1341165"
+      },
+      {
+        "AIN":"2470017020",
+        "FormattedAIN":"2470-017-020",
+        "Address1":"815 E HARVARD RD",
+        "Address2":"BURBANK CA 91501",
+        "ObjectId":"1595598"
+      },
+      {
+        "AIN":"5674009901",
+        "FormattedAIN":"5674-009-901",
+        "Address1":"815 E HARVARD ST",
+        "Address2":"GLENDALE CA 91205",
+        "ObjectId":"1171051"
+      }
+    ]
+  }
+}
+
+
+AIN search:
+http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/SQLAINSearch?f=json&AIN=5093017035&dojo.preventCache=1443751296094
+
+response:
+{
+  "results":{
+    "ParcelDetails":{
+      "ParcelType":0,
+      "Improvements":[
+        {
+          "ImprovementNum":1,
+          "BDLSQMAIN":"1,250",
+          "BDLYRBLT":"2008",
+          "BDLEFFYR":"2008",
+          "BDLBDRM":"3",
+          "BDLBATH":"2",
+          "BDLUNITS":"1"
+        }
+      ],
+      "Legals":[
+        "TR=64325 LOT 1 CONDO UNIT 301 (AIRSPACE",
+        "AND 1/9 INT IN COMMON AREA)",
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+      "AIN":"5093017035",
+      "FormattedAIN":"5093-017-035",
+      "Address1":"815 S HARVARD BLVD, 301",
+      "Address2":"LOS ANGELES CA 90005",
+      "UseType":"CND",
+      "UseType_Label":"Condominium",
+      "REGION":"09",
+      "REGION_LABEL":"West District",
+      "CLUSTER":"09292",
+      "TRA":"06657",
+      "RECDATE":"12/31/2014",
+      "SalePrice":"",
+      "SaleDate":"",
+      "LANDVAL":"$217,011",
+      "IMPROVAL":"$217,011",
+      "PPVALUE":"$0",
+      "FIXTVAL":"$0",
+      "HOEVAL":"$7,000",
+      "REEXEVAL":"$0",
+      "PPEXEVAL":"$0",
+      "FIXEVEV":"$0",
+      "Assr_Map":null,
+      "Assr_Index_Map":null,
+      "IsParcelsDisplay":true
+    },
+    "ParcelChanges":null,
+    "ParcelNotFoundDetails":null
+  }
+}
+
+response with sale:
+{
+  "results":{
+    "ParcelDetails":{
+      "ParcelType":0,
+      "Improvements":[
+        {
+          "ImprovementNum":1,
+          "BDLSQMAIN":"1,090",
+          "BDLYRBLT":"2008",
+          "BDLEFFYR":"2008",
+          "BDLBDRM":"2",
+          "BDLBATH":"2",
+          "BDLUNITS":"1"
+        }
+      ],
+      "Legals":[
+        "TR=64325 LOT 1 CONDO UNIT 202 (AIRSPACE",
+        "AND 1/9 INT IN COMMON AREA)",
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+      "AIN":"5093017034",
+      "FormattedAIN":"5093-017-034",
+      "Address1":"815 S HARVARD BLVD, 202",
+      "Address2":"LOS ANGELES CA 90005",
+      "UseType":"CND",
+      "UseType_Label":"Condominium",
+      "REGION":"09",
+      "REGION_LABEL":"West District",
+      "CLUSTER":"09292",
+      "TRA":"06657",
+      "RECDATE":"02/28/2013",
+      "SalePrice":"$451,004",
+      "SaleDate":"08/13/2015",
+      "LANDVAL":"$211,018",
+      "IMPROVAL":"$211,018",
+      "PPVALUE":"$0",
+      "FIXTVAL":"$0",
+      "HOEVAL":"$7,000",
+      "REEXEVAL":"$0",
+      "PPEXEVAL":"$0",
+      "FIXEVEV":"$0",
+      "Assr_Map":null,
+      "Assr_Index_Map":null,
+      "IsParcelsDisplay":true
+    },
+    "ParcelChanges":null,
+    "ParcelNotFoundDetails":null
+  }
+}
+
+parcels search:
+http://assessor.gis.lacounty.gov/assessor/rest/services/PAIS/pais_parcels/MapServer/0/query?f=json&where=AIN%20in%20(%275093017033%27%2C%275093017034%27%2C%275093017035%27%2C%275093017036%27%2C%275093017037%27%2C%275093017038%27%2C%275093017039%27%2C%275093017040%27%2C%275093017041%27%2C%272470017020%27%2C%275674009901%27)&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=*&outSR=102100
+
+parcels response:
+{
+  "displayFieldName": "AIN",
+  "fieldAliases": {
+    "OBJECTID": "OBJECTID",
+    "AIN": "AIN",
+    "FORMATTED_AIN": "FORMATTED_AIN",
+    "SAADDR": "SAADDR",
+    "SAADDR2": "SAADDR2",
+    "SASTR": "SASTR",
+    "SANUM": "SANUM",
+    "SAFRACT": "SAFRACT",
+    "SAUNIT": "SAUNIT",
+    "ISRECENTSALE": "ISRECENTSALE",
+    "FORMATTED_RECENTSALE": "FORMATTED_RECENTSALE",
+    "ESRI_OID": "ESRI_OID"
+  },
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeInteger",
+      "alias": "OBJECTID"
+    },
+    {
+      "name": "AIN",
+      "type": "esriFieldTypeString",
+      "alias": "AIN",
+      "length": 10
+    },
+    {
+      "name": "FORMATTED_AIN",
+      "type": "esriFieldTypeString",
+      "alias": "FORMATTED_AIN",
+      "length": 12
+    },
+    {
+      "name": "SAADDR",
+      "type": "esriFieldTypeString",
+      "alias": "SAADDR",
+      "length": 55
+    },
+    {
+      "name": "SAADDR2",
+      "type": "esriFieldTypeString",
+      "alias": "SAADDR2",
+      "length": 35
+    },
+    {
+      "name": "SASTR",
+      "type": "esriFieldTypeString",
+      "alias": "SASTR",
+      "length": 32
+    },
+    {
+      "name": "SANUM",
+      "type": "esriFieldTypeString",
+      "alias": "SANUM",
+      "length": 5
+    },
+    {
+      "name": "SAFRACT",
+      "type": "esriFieldTypeString",
+      "alias": "SAFRACT",
+      "length": 3
+    },
+    {
+      "name": "SAUNIT",
+      "type": "esriFieldTypeString",
+      "alias": "SAUNIT",
+      "length": 8
+    },
+    {
+      "name": "ISRECENTSALE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "ISRECENTSALE"
+    },
+    {
+      "name": "FORMATTED_RECENTSALE",
+      "type": "esriFieldTypeString",
+      "alias": "FORMATTED_RECENTSALE",
+      "length": 12
+    },
+    {
+      "name": "ESRI_OID",
+      "type": "esriFieldTypeOID",
+      "alias": "ESRI_OID"
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1595598,
+        "AIN": "2470017020",
+        "FORMATTED_AIN": "2470-017-020",
+        "SAADDR": "815 E HARVARD RD",
+        "SAADDR2": "BURBANK CA 91501",
+        "SASTR": "HARVARD RD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": " ",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34064
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169857.150616,
+              4054699.6978158
+            ],
+            [
+              -13169869.439377,
+              4054685.4665885
+            ],
+            [
+              -13169913.862552,
+              4054725.0261311
+            ],
+            [
+              -13169901.639397,
+              4054738.9835343
+            ],
+            [
+              -13169857.150616,
+              4054699.6978158
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341202,
+        "AIN": "5093017033",
+        "FORMATTED_AIN": "5093-017-033",
+        "SAADDR": "815 S HARVARD BLVD, 201",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "201",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34065
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341294,
+        "AIN": "5093017034",
+        "FORMATTED_AIN": "5093-017-034",
+        "SAADDR": "815 S HARVARD BLVD, 202",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "202",
+        "ISRECENTSALE": 1,
+        "FORMATTED_RECENTSALE": "*** SALE ***",
+        "ESRI_OID": 34066
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341247,
+        "AIN": "5093017035",
+        "FORMATTED_AIN": "5093-017-035",
+        "SAADDR": "815 S HARVARD BLVD, 301",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "301",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34067
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341400,
+        "AIN": "5093017036",
+        "FORMATTED_AIN": "5093-017-036",
+        "SAADDR": "815 S HARVARD BLVD, 302",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "302",
+        "ISRECENTSALE": 1,
+        "FORMATTED_RECENTSALE": "*** SALE ***",
+        "ESRI_OID": 34068
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341269,
+        "AIN": "5093017037",
+        "FORMATTED_AIN": "5093-017-037",
+        "SAADDR": "815 S HARVARD BLVD, 401",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "401",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34069
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341184,
+        "AIN": "5093017038",
+        "FORMATTED_AIN": "5093-017-038",
+        "SAADDR": "815 S HARVARD BLVD, 402",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "402",
+        "ISRECENTSALE": 1,
+        "FORMATTED_RECENTSALE": "*** SALE ***",
+        "ESRI_OID": 34070
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341444,
+        "AIN": "5093017039",
+        "FORMATTED_AIN": "5093-017-039",
+        "SAADDR": "815 S HARVARD BLVD, 501",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "501",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34071
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341382,
+        "AIN": "5093017040",
+        "FORMATTED_AIN": "5093-017-040",
+        "SAADDR": "815 S HARVARD BLVD, 502",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "502",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34072
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1341165,
+        "AIN": "5093017041",
+        "FORMATTED_AIN": "5093-017-041",
+        "SAADDR": "815 S HARVARD BLVD, 503",
+        "SAADDR2": "LOS ANGELES CA 90005",
+        "SASTR": "HARVARD BLVD",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": "503",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34073
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13169571.913614,
+              4036483.8514404
+            ],
+            [
+              -13169618.685738,
+              4036483.5255841
+            ],
+            [
+              -13169618.738309,
+              4036483.525424
+            ],
+            [
+              -13169620.888523,
+              4036483.5103963
+            ],
+            [
+              -13169620.915858,
+              4036493.8079079
+            ],
+            [
+              -13169620.936873,
+              4036501.9712828
+            ],
+            [
+              -13169618.782677,
+              4036501.9863227
+            ],
+            [
+              -13169618.734085,
+              4036501.9867129
+            ],
+            [
+              -13169571.961886,
+              4036502.3130545
+            ],
+            [
+              -13169571.913614,
+              4036483.8514404
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 1171051,
+        "AIN": "5674009901",
+        "FORMATTED_AIN": "5674-009-901",
+        "SAADDR": "815 E HARVARD ST",
+        "SAADDR2": "GLENDALE CA 91205",
+        "SASTR": "HARVARD ST",
+        "SANUM": "815",
+        "SAFRACT": " ",
+        "SAUNIT": " ",
+        "ISRECENTSALE": null,
+        "FORMATTED_RECENTSALE": "",
+        "ESRI_OID": 34074
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -13162943.580911,
+              4048249.891388
+            ],
+            [
+              -13162943.427728,
+              4048229.1680678
+            ],
+            [
+              -13162962.194525,
+              4048229.1997564
+            ],
+            [
+              -13162962.259895,
+              4048250.0822644
+            ],
+            [
+              -13162943.580911,
+              4048249.891388
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
